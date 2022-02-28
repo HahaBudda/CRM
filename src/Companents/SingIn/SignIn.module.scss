@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+
+  &__page {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    color: rgba(43, 56, 68, 1);
+    font-size: 2.25rem;
+
+  }
+
+  &__signin {
+
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+    }
+    &__email{
+    font-size: 0.75rem;
+    }
+    &__password{
+    font-size: 0.75rem;
+
+    }
+    &__forgot{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+      font-size: 0.75rem;
+      text-decoration: none;
+      color: rgba(83, 130, 231, 1);
+
+    }
+
+    &__label {
+    }
+
+
+  }
+
+
+  &__preview {
+    display: flex;
+    flex: 0 1;
+  }
+}

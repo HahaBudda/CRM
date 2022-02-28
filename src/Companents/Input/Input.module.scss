@@ -1,0 +1,22 @@
+
+.input, .input::before, .input::after {
+  box-sizing: border-box;
+}
+.input{
+  padding: 10px;
+  display: block;
+  width: 380px;
+  height: 46px;
+  border: 0.5px solid rgba(53, 67, 82, 0.3);
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-top: 8px;
+  border-radius: 5px ;
+
+}
+.input:active, .input:hover, .input:focus {
+  outline: 0;
+  outline-offset: 0;
+  border: 0.5px solid rgba(53, 67, 82, 1);
+
+}
