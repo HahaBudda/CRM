@@ -21,6 +21,7 @@
 
   }
 
+
   &__signin {
 
 
@@ -39,12 +40,25 @@
 
       &__wrapper{
         display: flex;
+        max-width: 380px;
+        gap: 20px;
 
       }
-
-      &__name{
-        display: block;
+      &__firstname{
+        max-width: 180px;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
       }
+      &__lastname{
+        max-width: 180px;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+
     }
 
 
@@ -52,15 +66,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 32px;
       font-size: 0.75rem;
       text-decoration: none;
       color: rgba(83, 130, 231, 1);
 
     }
 
-    &__label {
-    }
+
 
 
   }

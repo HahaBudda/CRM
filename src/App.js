@@ -5,8 +5,8 @@ import Createacc from "./Companents/Createacc/Createacc";
 function App() {
   return (
     <div className="App">
-    <SignIn/>
-    {/*  <Createacc/>*/}
+    {/*<SignIn/>*/}
+      <Createacc/>
     </div>
   );
 }

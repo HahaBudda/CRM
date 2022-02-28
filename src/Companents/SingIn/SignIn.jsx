@@ -15,22 +15,23 @@ const SignIn = () => {
 				<div className={styles.main__signin}>
 					<form className={styles.main__signin__form}>
 						<label className={styles.main__signin__label}>
-						Email
-						<Input/>
+							Email
+							<Input/>
 						</label>
 						<label className={styles.main__signin__label}>
-						Password
-						<Input/>
+							Password
+							<Input/>
 						</label>
 						<label className={styles.main__signin__button}><Button/></label>
+						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>Forgot
+							password?</a></label>
 					</form>
-					<a href="#" className={styles.main__signin__forgot}>Forgot password?</a>
 				</div>
 			</div>
 			<div className={styles.main__preview}>
 				<img className={styles.main__preview__img} alt={"PreviewImg"} src={PreviewImg}/>
 			</div>
-			
+
 		</main>
 	);
 };
