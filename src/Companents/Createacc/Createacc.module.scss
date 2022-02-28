@@ -32,11 +32,21 @@
 
     }
     &__label{
-    font-size: 0.75rem;
+      font-size: 0.75rem;
       display: flex;
       flex-direction: column;
-      box-sizing: border-box;
+
+
+      &__wrapper{
+        display: flex;
+
+      }
+
+      &__name{
+        display: block;
+      }
     }
+
 
     &__forgot{
       display: flex;
@@ -60,7 +70,7 @@
     display: flex;
     flex: 0 1;
     &__img{
-    height: 100vh;
+      height: 100vh;
     }
   }
 }
