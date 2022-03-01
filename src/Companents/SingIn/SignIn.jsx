@@ -14,17 +14,24 @@ const SignIn = () => {
 				<h1 className={styles.main__title}>Sign in</h1>
 				<div className={styles.main__signin}>
 					<form className={styles.main__signin__form}>
-						<label className={styles.main__signin__label}>
+						<label className={styles.main__signin__label}
+						>
 							Email
-							<Input/>
+							<Input
+								type={'text'}
+								placeholder={'email'}
+							/>
 						</label>
 						<label className={styles.main__signin__label}>
 							Password
-							<Input/>
+							<Input
+								type={'password'}
+								placeholder={'password'}/>
 						</label>
-						<label className={styles.main__signin__button}><Button/></label>
-						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>Forgot
-							password?</a></label>
+						<label className={styles.main__signin__button}><Button title={'Log in'}/></label>
+						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>
+							Forgot password?
+						</a></label>
 					</form>
 				</div>
 			</div>

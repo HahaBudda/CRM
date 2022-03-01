@@ -2,10 +2,12 @@ import React from 'react';
 
 import styles from './Button.module.scss'
 
-const Button = () => {
+const Button = ({title,...props}) => {
 	return (
 
-			<button className={styles.button}>dasdasda</button>
+			<button className={styles.button}>
+				{title}
+			</button>
 
 	);
 };

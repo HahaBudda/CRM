@@ -14,32 +14,55 @@ const Createacc = () => {
 					<form className={styles.main__signin__form}>
 						<div className={styles.main__signin__label__wrapper}>
 							<label className={styles.main__signin__label__firstname}>
-							Email
-							<Input/>
+							First name
+							<Input
+								type={'text'}
+								placeholder={'First name'}
+							/>
 						</label>
 							<label className={styles.main__signin__label__lastname}>
-								Email
-								<Input/>
+								Last name
+								<Input
+									type={'text'}
+									placeholder={'Last name'}
+
+								/>
 							</label>
 						</div>
 
 						<label className={styles.main__signin__label}>
+							Company name
+							<Input
+								type={'text'}
+								placeholder={'Company name'}
+
+							/>
+						</label>
+						<label className={styles.main__signin__label}>
 							Email
-							<Input/>
+							<Input
+								type={'email'}
+								placeholder={'Email'}
+
+							/>
 						</label>
 						<label className={styles.main__signin__label}>
-							Password
-							<Input/>
+							Enter password
+							<Input
+								type={'password'}
+								placeholder={'Enter password'}
+
+							/>
 						</label>
 						<label className={styles.main__signin__label}>
-							Email
-							<Input/>
+							Repeat password
+							<Input
+								type={'password'}
+								placeholder={'Repeat password'}
+
+							/>
 						</label>
-						<label className={styles.main__signin__label}>
-							Password
-							<Input/>
-						</label>
-						<label className={styles.main__signin__button}><Button/></label>
+						<label className={styles.main__signin__button}><Button title={'Create account'}/></label>
 						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>Forgot password?</a></label>
 					</form>
 
