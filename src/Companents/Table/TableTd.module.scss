@@ -1,0 +1,50 @@
+
+tbody {
+  text-align: center;
+}
+
+tr{
+  max-height:54px;
+}
+td {
+
+  background: #FFFFFF;
+  padding: 18px;
+
+
+}
+.td{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+&__button__sell{
+  border-radius: 5px;
+  padding: 10px 20px;
+ border: none;
+  background:rgba(83, 130, 231, 0.2);
+  color: rgba(83, 130, 231, 1);
+}
+&__button__redact{
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  background:rgba(83, 130, 231, 0.2);
+
+}
+&__button__dell {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background: #FFFFFF;
+
+
+}
+}
+.scroll__table{
+
+
+}
+
+

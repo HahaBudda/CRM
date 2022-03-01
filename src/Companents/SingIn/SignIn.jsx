@@ -7,7 +7,9 @@ import PreviewImg from '../../Assets/preview.jpg'
 import Input from "../Input/Input";
 import Button from "../Button/Button";
 
+
 const SignIn = () => {
+
 	return (
 		<main className={styles.main}>
 			<div className={styles.main__page}>
@@ -19,14 +21,14 @@ const SignIn = () => {
 							Email
 							<Input
 								type={'text'}
-								placeholder={'email'}
+								placeholder={'Email'}
 							/>
 						</label>
 						<label className={styles.main__signin__label}>
 							Password
 							<Input
 								type={'password'}
-								placeholder={'password'}/>
+								placeholder={'Enter password'}/>
 						</label>
 						<label className={styles.main__signin__button}><Button title={'Log in'}/></label>
 						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>

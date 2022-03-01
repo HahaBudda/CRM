@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
 }
-.App{
 
+body{
+    background: #F8F8F8;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    margin: 0 56px;
 }

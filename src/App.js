@@ -5,15 +5,20 @@ import Navbar from "./Companents/Navbar/Navbar";
 import Myproduct from "./Companents/Myproduct/Myproduct";
 import Header from "./Companents/Header/Header";
 
+
 function App() {
   return (
-    <div className="App">
-    {/*<SignIn/>*/}
-    {/*  <Createacc/>*/}
-    {/*  <Navbar/>*/}
-      <Myproduct/>
-    {/*  <Header/>*/}
-    </div>
+
+      <div className="App">
+        <div className="wrapper">
+        <Navbar/>
+        <div className="container">
+          <Header title={'Personal Cabinet'} description={'Information about your account'}/>
+          <Myproduct/>
+          </div>
+        </div>
+      </div>
+
   );
 }
 

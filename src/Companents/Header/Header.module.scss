@@ -1,41 +1,30 @@
 .header {
+  border-bottom: 1px solid #3C4E6014;
+  margin-bottom: 40px;
 
+  &__button_wrapper{
+    max-width: 200px;
+  }
 
   &__wrapper{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
   }
   &__title{
-    margin:2%
+    padding: 64px 0 32px 0;
+    color: #2B3844;
 
-  }
-  &__button{
-    margin: 2%;
-    padding: 1% 2%;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-
-    box-sizing: border-box;
-    border-radius: 5px ;
-    border: none;
-    background-color: rgba(83, 130, 231, 1);
-    color: rgba(255, 255, 255, 1);
-
-    path {
-      stroke:rgba(255, 255, 255, 1) ;
-    }
-    &:hover {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(83, 130, 231, 1);
-      path {
-        stroke: rgba(83, 130, 231, 1);
-      }
+    &h1{
+      font-size: 2.25rem;
+      font-weight: 700;
     }
 
-
+    &span{
+      font-size: 0.875rem;
+      opacity: 0.7;
+    }
   }
 
 }

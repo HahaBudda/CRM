@@ -62,16 +62,20 @@
     }
 
 
-    &__forgot{
+    &__label__forgot{
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 0.75rem;
-      text-decoration: none;
-      color: rgba(83, 130, 231, 1);
+
+      &_a{
+
+        text-decoration: none;
+        color: rgba(83, 130, 231, 1);
+
+      }
 
     }
-
 
 
 

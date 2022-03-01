@@ -1,40 +1,29 @@
-.header {
-  margin-left: 300px;
-  &__wrapper{
-    display: flex;
+.main{
 
-  }
-  &__title{
-    margin:2%
+  &__table{
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      min-height: 672px;
+      background:white;
 
-  }
-  &__button{
-    margin: 2%;
-    padding: 1% 2%;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-
-    box-sizing: border-box;
-    border-radius: 5px ;
-    border: none;
-    background-color: rgba(83, 130, 231, 1);
-    color: rgba(255, 255, 255, 1);
-
-    path {
-      stroke:rgba(255, 255, 255, 1) ;
-    }
-    &:hover {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(83, 130, 231, 1);
-      path {
-        stroke: rgba(83, 130, 231, 1);
-      }
-    }
 
 
   }
+}
+thead {
+  text-align: center;
+  background: rgba(43, 56, 68, 1);
+  color: #FFFFFF;
+  border-radius: 10px;
+
+
+}
+
+th {
+  padding: 18px;
+  font-weight: 100;
+  font-size: 1rem;
+
 
 }

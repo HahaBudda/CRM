@@ -63,7 +63,7 @@ const Createacc = () => {
 							/>
 						</label>
 						<label className={styles.main__signin__button}><Button title={'Create account'}/></label>
-						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>Forgot password?</a></label>
+						<label className={styles.main__signin__label__forgot}>Already have an account?  <a href="#" className={styles.main__signin__forgot_a}> Log in</a></label>
 					</form>
 
 				</div>
