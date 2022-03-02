@@ -3,6 +3,7 @@ import style from "./PageMain.module.scss"
 import Navbar from "../../Companents/Navbar/Navbar";
 import Header from "../../Companents/Header/Header";
 import Main from "../../Companents/Main/Main";
+import Modal from "../../Companents/Modal/Modal";
 
 const PageMain = () => {
 	return (
@@ -14,6 +15,7 @@ const PageMain = () => {
 					<Main/>
 				</div>
 			</div>
+
 		</div>
 	);
 };
