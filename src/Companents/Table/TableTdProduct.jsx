@@ -1,11 +1,12 @@
 import React from 'react';
 
-import style from './TableTd.module.scss'
+import style from './TableTdProduct.module.scss'
 
 import iconRedact from '../../Assets/Redact.svg'
 import iconDell from  '../../Assets/Delete.svg'
 
-const TableTd = ({name}) => {
+
+const TableTdProduct = ({name}) => {
   return (
       <>
 
@@ -32,4 +33,4 @@ const TableTd = ({name}) => {
 );
 };
 
-export default TableTd;
+export default TableTdProduct;

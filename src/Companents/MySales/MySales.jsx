@@ -1,11 +1,9 @@
 import React from 'react';
-
+import styles from "./MySales.module.scss"
 import tableTd from "../../MockData/mockData";
-import TableTdProduct from "../Table/TableTdProduct";
+import TableTdProduct from "../Table/TableTdSales";
 
-import styles from './Myproduct.module.scss'
-
-const Myproduct = () => {
+const MySales = () => {
 	return (
 		<main className={styles.main}>
 			<table className={styles.main__table}>
@@ -17,21 +15,19 @@ const Myproduct = () => {
 					<th>Category</th>
 					<th>Creation date</th>
 					<th>Price</th>
-					<th>Remains</th>
+					<th>Sold items</th>
 					<th>Weight/Volume</th>
-					<th>Actions</th>
+					<th>Last sale</th>
 				</tr>
 				</thead>
 				{tableTd.map((td) => {
 					return (
-							<TableTdProduct name={td.name}/>
+						<TableTdProduct name={td.name}/>
 					)
 				})}
 			</table>
 		</main>
-
-
 	);
 };
 
-export default Myproduct;
+export default MySales;

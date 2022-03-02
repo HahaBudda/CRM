@@ -21,12 +21,14 @@
 
 
     &__button {
+      text-decoration: none;
+      box-sizing: border-box;
       font-size: 0.75rem;
       width: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding: 8% 0 8% 16%;
+      padding: 8% 0 8% 11%;
       box-shadow: none;
       border: none;
       background-color: white;

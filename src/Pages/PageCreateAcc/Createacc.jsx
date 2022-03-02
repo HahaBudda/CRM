@@ -1,9 +1,10 @@
 import React from 'react';
 
 import styles from './Createacc.module.scss'
-import Input from "../Input/Input";
-import Button from "../Button/Button";
+import Input from "../../Companents/Input/Input";
+import Button from "../../Companents/Button/Button";
 import PreviewImg from "../../Assets/preview.jpg";
+import {Link} from "react-router-dom";
 
 const Createacc = () => {
 	return (
@@ -43,7 +44,6 @@ const Createacc = () => {
 							<Input
 								type={'email'}
 								placeholder={'Email'}
-
 							/>
 						</label>
 						<label className={styles.main__signin__label}>
@@ -63,7 +63,7 @@ const Createacc = () => {
 							/>
 						</label>
 						<label className={styles.main__signin__button}><Button title={'Create account'}/></label>
-						<label className={styles.main__signin__label__forgot}>Already have an account?  <a href="#" className={styles.main__signin__forgot_a}> Log in</a></label>
+						<label className={styles.main__signin__label__forgot}>Already have an account?  <Link to='/sign-in' className={styles.main__signin__forgot__a}> Log in</Link></label>
 					</form>
 
 				</div>

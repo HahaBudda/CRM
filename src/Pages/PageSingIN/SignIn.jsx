@@ -4,8 +4,9 @@ import styles from './SignIn.module.scss'
 
 import PreviewImg from '../../Assets/preview.jpg'
 
-import Input from "../Input/Input";
-import Button from "../Button/Button";
+import Input from "../../Companents/Input/Input";
+import Button from "../../Companents/Button/Button";
+import {Link} from "react-router-dom";
 
 
 const SignIn = () => {
@@ -31,9 +32,9 @@ const SignIn = () => {
 								placeholder={'Enter password'}/>
 						</label>
 						<label className={styles.main__signin__button}><Button title={'Log in'}/></label>
-						<label className={styles.main__signin__label}><a href="#" className={styles.main__signin__forgot}>
+						<label className={styles.main__signin__label}><Link to='/create-acc' className={styles.main__signin__forgot}>
 							Forgot password?
-						</a></label>
+						</Link></label>
 					</form>
 				</div>
 			</div>

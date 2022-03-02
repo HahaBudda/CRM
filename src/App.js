@@ -1,25 +1,36 @@
 import './App.css';
-import SignIn from "./Companents/SingIn/SignIn";
-import Createacc from "./Companents/Createacc/Createacc";
-import Navbar from "./Companents/Navbar/Navbar";
-import Myproduct from "./Companents/Myproduct/Myproduct";
-import Header from "./Companents/Header/Header";
+import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
+import SignIn from "./Pages/PageSingIN/SignIn";
+import PageMyproduct from "./Pages/PageMyproduct/PageMyproduct";
+import PageMain from "./Pages/PageMain/PageMain";
+import PageMySales from "./Pages/PageMySales/PageMySales";
+import PersonalCabinet from "./Companents/PersonalCabinet/PersonalCabinet";
+import PagePersonalCabinet from "./Pages/PagePersonalCabinet/PagePersonalCabinet";
+import {privateRoutes,publicRoutes } from "./Companents/UI/AppRouter";
+
 
 
 function App() {
-  return (
+	return (
+		<BrowserRouter>
+		<Switch>
+			{privateRoutes.map(route =>
+				<Route
+					component={route.component}
+					path={route.path}
+				/>
+			)}
+			{publicRoutes.map(route =>
+				<Route
+					component={route.component}
+					path={route.path}
+				/>
+			)}
+			<Redirect to={"/sign-in"}/>
+		</Switch>
 
-      <div className="App">
-        <div className="wrapper">
-        <Navbar/>
-        <div className="container">
-          <Header title={'Personal Cabinet'} description={'Information about your account'}/>
-          <Myproduct/>
-          </div>
-        </div>
-      </div>
-
-  );
+		</BrowserRouter>
+	);
 }
 
 export default App;

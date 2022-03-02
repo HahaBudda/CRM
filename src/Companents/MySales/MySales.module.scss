@@ -1,0 +1,29 @@
+.main{
+
+  &__table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    min-height: 672px;
+    background:white;
+
+
+
+  }
+}
+thead {
+  text-align: center;
+  background: rgba(43, 56, 68, 1);
+  color: #FFFFFF;
+  border-radius: 10px;
+
+
+}
+
+th {
+  padding: 18px;
+  font-weight: 100;
+  font-size: 1rem;
+
+
+}
