@@ -1,28 +1,45 @@
+import React from "react";
+
 import './App.css';
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {privateRoutes,publicRoutes } from "./Companents/routes/AppRouter";
+import Header from "./Companents/Header/Header";
+import Navbar from "./Companents/Navbar/Navbar";
+
 
 
 
 function App() {
 	return (
 		<BrowserRouter>
-		<Switch>
-			{privateRoutes.map(route =>
-				<Route
-					component={route.component}
-					path={route.path}
-				/>
-			)}
-			{publicRoutes.map(route =>
-				<Route
-					component={route.component}
-					path={route.path}
-				/>
-			)}
-			<Redirect to={"/sign-in"}/>
-		</Switch>
+			<Switch>
+				{publicRoutes.map(route =>
+					<Route
+						component={route.component}
+						path={route.path}
+					/>
+				)}
 
+
+			<div className="main">
+			<div className="wrapper">
+				<Navbar/>
+				<div className="container">
+					<Header
+						title={ 'dsds'}
+						description={'dsdsd'}
+					/>
+					{privateRoutes.map(route =>
+						<Route
+							component={route.component}
+							path={route.path}
+						/>
+					)}
+				</div>
+			</div>
+			</div>
+				<Redirect to={"/sign-in"}/>
+			</Switch>
 		</BrowserRouter>
 	);
 }
