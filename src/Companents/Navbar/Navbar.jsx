@@ -5,7 +5,7 @@ import styles from './Navbar.module.scss'
 import logo from '../../Assets/NavLogo.svg'
 import {Link} from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({setTitle}) => {
 	return (
 		<nav className={styles.nav}>
 			<div className={styles.nav__wrapper__img}><img className={styles.nav__img} src={logo} alt={'Justice CRM'}/></div>

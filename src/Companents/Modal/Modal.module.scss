@@ -8,12 +8,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0);
+
 
   &__content{
-    width: 100px;
-    padding: 32px;
+    padding: 64px;
     border-radius: 10px;
-    background-color: red;
+    background-color:white ;
+
+    &__form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      font-size: 1rem;
+      color: rgba(43, 56, 68, 1);
+
+    }
+    &__label{
+
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+
+    }
   }
 }
+
