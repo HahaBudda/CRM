@@ -9,6 +9,7 @@ import Button from "../../Companents/Button/Button";
 import {Link} from "react-router-dom";
 
 
+
 const SignIn = () => {
 
 	return (
@@ -17,24 +18,20 @@ const SignIn = () => {
 				<h1 className={styles.main__title}>Sign in</h1>
 				<div className={styles.main__signin}>
 					<form className={styles.main__signin__form}>
-						<label className={styles.main__signin__label}
-						>
-							Email
-							<Input
-								type={'text'}
-								placeholder={'Email'}
-							/>
-						</label>
-						<label className={styles.main__signin__label}>
-							Password
-							<Input
-								type={'password'}
-								placeholder={'Enter password'}/>
-						</label>
-						<label className={styles.main__signin__button}><Button title={'Log in'}/></label>
-						<label className={styles.main__signin__label}><Link to='/create-acc' className={styles.main__signin__forgot}>
-							Forgot password?
-						</Link></label>
+						<Input type={'email'}
+						       label={'Email'}
+						       placeholder={'Email'}/>
+
+						<Input type={'password'}
+						       label={'Password'}
+						       placeholder={'Enter password'}/>
+
+							<Button title={'Log in'}/>
+
+							<Link to='/create-acc' className={styles.main__signin__forgot}>
+								Forgot password?
+							</Link>
+
 					</form>
 				</div>
 			</div>

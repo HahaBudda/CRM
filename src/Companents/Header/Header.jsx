@@ -3,11 +3,11 @@ import React, {useState} from 'react';
 import Button from "../Button/Button";
 
 import style from './Header.module.scss'
-import Modal from "../Modal/Modal";
+import ModalCreate from "../Modal/ModalCreate";
 import {useLocation} from "react-router-dom";
-// import fileSvg from '../../Assets/doc.svg'
 
-const Header = ({title, description}) => {
+
+const Header = () => {
 
 	const [modalActive, setModalActive] = useState(false)
 
@@ -15,7 +15,7 @@ const Header = ({title, description}) => {
 
 
 	function renderHeadings() {
-		// return pathname.includes('sales') && 'Sales statistics';
+
 		switch (pathname) {
 			case '/main-page':
 				return {title:'Sales statistics', description: 'Welcome to CRM dashboard'};
@@ -44,7 +44,7 @@ const Header = ({title, description}) => {
 			{
 				modalActive
 				&&
-				<Modal active={modalActive} setActive={setModalActive}/>
+				<ModalCreate active={modalActive} setActive={setModalActive}/>
 			}
 		</>
 	);

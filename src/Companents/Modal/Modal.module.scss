@@ -12,25 +12,23 @@
 
   &__content{
     padding: 64px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color:white ;
+
 
     &__form{
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       gap: 30px;
       font-size: 1rem;
       color: rgba(43, 56, 68, 1);
+     width: 380px
+
 
     }
-    &__label{
 
-      display: flex;
-      flex-direction: column;
-      width: 300px;
-
-    }
   }
 }
 
