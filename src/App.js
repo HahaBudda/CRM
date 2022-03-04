@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import './App.css';
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
@@ -10,6 +10,7 @@ import Navbar from "./Companents/Navbar/Navbar";
 
 
 function App() {
+	const [isLogin, setIsLogin] = useState(localStorage.getItem('LOGIN_USER'))
 	return (
 		<BrowserRouter>
 			<Switch>
