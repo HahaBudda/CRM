@@ -1,18 +1,15 @@
 import React, {useState} from 'react';
 
 import styles from './Input.module.scss'
-import {useLocation} from "react-router-dom";
+
 import {Patterns} from "../../appCreateAcc";
 import classNames from "classnames";
 
 const Input = (props) => {
-  const {label, name, setFormValue, formValue, placeholder, type} = props
-  const {pathname} = useLocation()
+  const {label, name, setFormValue, formValue, placeholder, type,} = props
 
-  switch (pathname) {
-    case '/create-acc':
 
-  }
+
   const changeInput = (e) => {
     if (e.target.name === 'confirmPassword') {
       setFormValue({
@@ -30,6 +27,7 @@ const Input = (props) => {
       })
     }
   }
+
 
     return (
         <div className={styles.input__wrapper}>

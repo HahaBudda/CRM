@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import styles from './SignIn.module.scss'
 
@@ -12,19 +12,42 @@ import {Link} from "react-router-dom";
 
 const SignIn = () => {
 
+	const [formValue, setFormValue] = useState({
+		email: {
+			value: '',
+			isValid: false
+		},
+		password: {
+			value: '',
+			isValid: false
+		},
+
+	})
+
+
 	return (
 		<main className={styles.main}>
 			<div className={styles.main__page}>
 				<h1 className={styles.main__title}>Sign in</h1>
 				<div className={styles.main__signin}>
 					<form className={styles.main__signin__form}>
-						<Input type={'email'}
-						       label={'Email'}
-						       placeholder={'Email'}/>
+						<Input type='text'
+						       name='firstName'
+						       label='First name'
+						       placeholder='First name'
+						       formValue={formValue}
+						       setFormValue={setFormValue}
+						       value=''
+						/>
 
-						<Input type={'password'}
-						       label={'Password'}
-						       placeholder={'Enter password'}/>
+						<Input type='text'
+						       name='firstName'
+						       label='First name'
+						       placeholder='First name'
+						       formValue={formValue}
+						       setFormValue={setFormValue}
+						       value=''
+						/>
 
 							<Button title={'Log in'}/>
 
