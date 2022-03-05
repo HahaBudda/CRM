@@ -12,10 +12,8 @@ export const privateRoutes=[
 	{path: '/my-products',component:Myproduct},
 	{path: '/my-sales',component: MySales},
 	{path: '/personal-cabinet',component: PersonalCabinet},
-	{path: '/sign-in', component: SignIn},
 ]
 export const publicRoutes=[
 	{path:'/sign-in',component:SignIn},
 	{path: '/create-acc',component:Createacc}
-
 ]

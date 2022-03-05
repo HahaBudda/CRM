@@ -6,25 +6,32 @@ import {Patterns} from "../../appCreateAcc";
 import classNames from "classnames";
 
 const Input = (props) => {
-  const {label, name, setFormValue, formValue, placeholder, type,} = props
-
-
+  const {label, name, setFormValue, formValue, placeholder, type,location} = props
 
   const changeInput = (e) => {
-    if (e.target.name === 'confirmPassword') {
-      setFormValue({
-        ...formValue, confirmPassword: {
-          value: e.target.value,
-          isValid: e.target.value !== '' && e.target.value === formValue.password.value && formValue.password.isValid
-        }
-      })
-    } else {
-      setFormValue({
-        ...formValue, [name]: {
-          value: e.target.value,
-          isValid: Patterns[name].test(e.target.value)
-        }
-      })
+    if (location === '/create-acc') {
+      if (e.target.name === 'confirmPassword') {
+         setFormValue({
+          ...formValue, confirmPassword: {
+            value: e.target.value,
+            isValid: e.target.value !== '' && e.target.value === formValue.password.value && formValue.password.isValid
+          }
+        })
+      } else {
+        setFormValue({
+          ...formValue, [name]: {
+            value: e.target.value,
+            isValid: Patterns[name].test(e.target.value)
+          }
+        })
+      }
+    } else if (location==='/sign-in'){
+        setFormValue({
+          ...formValue,[name]:{
+            value: e.target.value,
+            isValid: Patterns[name].test(e.target.value)
+          }
+        })
     }
   }
 
@@ -37,8 +44,9 @@ const Input = (props) => {
               type={type}
               placeholder={placeholder}
               onChange={(e) => changeInput(e)}
-              className={classNames(styles.input, {[styles.error]: !formValue[name].isValid && formValue[name].value})}
+              className={classNames(styles.input, {[styles.error] : !formValue[name]?.isValid && formValue[name]?.value})}
           />
+
         </div>
     );
 }

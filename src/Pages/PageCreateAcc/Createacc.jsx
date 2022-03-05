@@ -4,7 +4,7 @@ import styles from './Createacc.module.scss'
 import Input from "../../Companents/Input/Input";
 import Button from "../../Companents/Button/Button";
 import PreviewImg from "../../Assets/preview.jpg";
-import {Link, useLocation} from "react-router-dom";
+import {Link, useHistory, useLocation} from "react-router-dom";
 
 
 const Createacc = () => {
@@ -36,7 +36,7 @@ const Createacc = () => {
 	})
 	const usersStorage = JSON.parse(localStorage.getItem('USERS_STORAGE')) || []
 	const [isFormValid, setIsFormValid] = useState([])
-
+	const history = useHistory()
 
 	const onSubmit = (e) => {
 		e.preventDefault()
@@ -60,11 +60,10 @@ const Createacc = () => {
 			}else {
 				localStorage.setItem('USERS_STORAGE', JSON.stringify([...usersStorage, newUser]))
 				localStorage.setItem('LOGIN_USER', JSON.stringify(newUser))
+				history.push('/sign-in')
+
 
 			}
-
-
-
 		} else {
 
 		}
@@ -88,6 +87,7 @@ const Createacc = () => {
 							       formValue={formValue}
 							       setFormValue={setFormValue}
 							       value=''
+							       location='/create-acc'
 							/>
 							<Input type='text'
 							       name='lastName'
@@ -96,6 +96,7 @@ const Createacc = () => {
 							       formValue={formValue}
 							       setFormValue={setFormValue}
 							       value=''
+							       location='/create-acc'
 							/>
 						</div>
 						<Input type='text'
@@ -105,6 +106,7 @@ const Createacc = () => {
 						       formValue={formValue}
 						       setFormValue={setFormValue}
 						       value=''
+						       location='/create-acc'
 
 						/>
 						<Input type='email'
@@ -114,6 +116,7 @@ const Createacc = () => {
 						       formValue={formValue}
 						       setFormValue={setFormValue}
 						       value=''
+						       location='/create-acc'
 						/>
 						<Input type='password'
 						       name='password'
@@ -122,6 +125,7 @@ const Createacc = () => {
 						       formValue={formValue}
 						       setFormValue={setFormValue}
 						       value=''
+						       location='/create-acc'
 						/>
 						<Input type='password'
 						       name='confirmPassword'
@@ -130,6 +134,7 @@ const Createacc = () => {
 						       formValue={formValue}
 						       setFormValue={setFormValue}
 						       value=''
+						       location='/create-acc'
 						/>
 						<Button title={'Create account'} onClick={onSubmit}/>
 						<label className={styles.main__signin__label__forgot}>Already have an account?

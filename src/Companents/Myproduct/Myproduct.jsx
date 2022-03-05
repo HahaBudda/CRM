@@ -29,8 +29,6 @@ const Myproduct = () => {
 				})}
 			</table>
 		</main>
-
-
 	);
 };
 
