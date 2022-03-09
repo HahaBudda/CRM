@@ -25,12 +25,13 @@ const SignIn = () => {
 	})
 	const history = useHistory()
 	const usersStorage = JSON.parse(localStorage.getItem('USERS_STORAGE')) || []
-	const [isFormValid, setIsFormValid] = useState([])
+
 
 
 	const onSubmit=(e)=>{
 		e.preventDefault()
-		if(usersStorage.find((user => user.email === formValue.email.value)) && usersStorage.find((user=>user.password === formValue.password.value))){
+		if(usersStorage.find((user) => user.email === formValue.email.value) && usersStorage.find((user)=>user.password === formValue.password.value))
+		{
 			history.push('/main-page')
 			console.log('123')
 
